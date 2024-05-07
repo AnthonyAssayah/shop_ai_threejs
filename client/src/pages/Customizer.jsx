@@ -24,7 +24,7 @@ const Customizer = () => {
       {!snap.intro && (
         <>
           {" "}
-          //side bar menu
+          {/*side bar menu*/}
           <motion.div
             key="custom"
             className="absolute top-0 left-0 z-10"
@@ -42,7 +42,7 @@ const Customizer = () => {
             className="absolute z-10 top-5 right-5"
             {...fadeAnimation}
           >
-            /* Go back button*/
+            {/*Go back button*/}
             <CustomButton
               type="filled"
               title="Go Back"
