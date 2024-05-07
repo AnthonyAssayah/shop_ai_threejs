@@ -22,7 +22,9 @@ const Customizer = () => {
   return (
     <AnimatePresence>
       {!snap.intro && (
-        <> //side bar menu
+        <>
+          {" "}
+          //side bar menu
           <motion.div
             key="custom"
             className="absolute top-0 left-0 z-10"
@@ -36,19 +38,31 @@ const Customizer = () => {
               </div>
             </div>
           </motion.div>
-
           <motion.div
-                className="absolute z-10 top-5 right-5"
-                {...fadeAnimation}
+            className="absolute z-10 top-5 right-5"
+            {...fadeAnimation}
           >
-          // Go back button
-          <CustomButton
-                type="filled"
-                title= "Go Back"
-                handleClick={() => state.intro = true}
-                customStyles="w-fitpx-4 py-2.5 font-bold text-sm"
-          />
-          
+            /* Go back button*/
+            <CustomButton
+              type="filled"
+              title="Go Back"
+              handleClick={() => (state.intro = true)}
+              customStyles="w-fitpx-4 py-2.5 font-bold text-sm"
+            />
+          </motion.div>
+          <motion.div
+            className="filtertabs-container"
+            {...slideAnimation("up")}
+          >
+            {FilterTabs.map((tab) => (
+              <Tab
+                key={tab.name}
+                tab={tab}
+                isFilterTab
+                isActiveTab=""
+                handleClick={() => {}}
+              />
+            ))}
           </motion.div>
         </>
       )}
