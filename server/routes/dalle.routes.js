@@ -24,7 +24,8 @@ router.route('/').post(async (req, res) => {
     try {
         const {prompt} = req.body;
 
-        const response = await openai.createImage({
+        const response = await openai.chat.completions.create({
+            model: "gpt-3.5-turbo",
             prompt,
             n: 1,
             size: '1024x1024',
