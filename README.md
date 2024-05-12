@@ -6,6 +6,7 @@
 - [Technologies](#technologies)
 - [Features](#features)
 - [Installation](#installation)
+- [Demo](#demo)
 
 ## Introduction
 
@@ -97,4 +98,8 @@ Running the Project
   ``` npm run dev ```
 
 Open http://localhost:5173 in your browser to view the project.
+
+## Demo
+
+https://github.com/AnthonyAssayah/shop_ai_threejs/assets/92322613/b1afb88c-6b6d-4933-b495-8c3bda161979
 
